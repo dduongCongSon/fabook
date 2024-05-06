@@ -1,0 +1,67 @@
+/* Header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgb(92, 92, 92); */
+    width: 100%;
+    border-bottom:2px solid gray ;
+}
+
+.header-search{
+    display: flex;
+    justify-content: left;
+}
+
+.searchbox{
+    background-color:rgb(226, 226, 226) ;
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+#box-search{
+    margin: -10px 0px -10px 5px;
+    border: none;
+    padding: 10px;
+    outline: none;
+    background-color:rgb(226, 226, 226) ;
+
+}
+
+#icon-search{
+    margin-top:42px;
+    margin-left: 0px;
+    scale: 200%
+}
+
+.header-icon{
+    margin-top: 20px
+}
+
+.icon li{
+    list-style: none;  
+    display: inline;
+    margin: 10px 50px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    color: inherit;
+
+}
+
+.header-alert button{
+    border-radius: 50%; /* Bo góc để tạo nút tròn */
+    width: 50px; /* Chiều rộng */
+    height: 50px; /* Chiều cao */
+    margin: 20px 5px;
+    border: none;
+}
+
+.header-alert{
+    display: flex;
+}
+
+
+
+

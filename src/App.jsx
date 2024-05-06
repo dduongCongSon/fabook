@@ -1,7 +1,10 @@
 
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
+import Header from './components/Navigation/Header'
+import Hello from './components/Hello'
 
-import {Navigation} from './components/Navigation/navigation'
+
 
 
 function App() {
@@ -9,7 +12,10 @@ function App() {
 
   return (
     <>
-    <Navigation/>
+    <Header/>
+    <Routes>
+      <Route path='/videos' element={<Hello/>}/>
+    </Routes>
     </>
   )
 }
