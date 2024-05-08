@@ -2,20 +2,22 @@
 .header{
     display: flex;
     justify-content: space-between;
-    /* background-color: rgb(92, 92, 92); */
+    background-color: #FFEFEF;
+    align-items:center ;
     width: 100%;
     border-bottom:2px solid gray ;
 }
 
 .header-search{
     display: flex;
-    justify-content: left;
+    position: relative;
+    /* justify-content: left; */
 }
 
 .searchbox{
     background-color:rgb(226, 226, 226) ;
     display: flex;
-    margin: 20px;
+    margin: 20px 20px 20px 60px;
     padding: 10px;
     border-radius: 20px;
 }
@@ -30,38 +32,85 @@
 
 }
 
-#icon-search{
+#icon-fabook{
+    height: 48px;
+    color: rgb(26, 66, 199);
+    cursor: pointer;
     margin-top:42px;
-    margin-left: 0px;
-    scale: 200%
+    margin-right: 20px; 
+    margin-left: 5px;
+    position: absolute;
+    /* font-size: 30px; 
+    scale: 200% */
+   
 }
 
 .header-icon{
     margin-top: 20px
 }
 
-.icon li{
+.header-icon ul li{
     list-style: none;  
     display: inline;
     margin: 10px 50px;
-    padding-top: 15px;
+    padding-top: 0px;
     padding-bottom: 5px;
-    color: inherit;
+    color: #F3D0D7;
+    cursor: pointer;
 
 }
 
 .header-alert button{
-    border-radius: 50%; /* Bo góc để tạo nút tròn */
-    width: 50px; /* Chiều rộng */
-    height: 50px; /* Chiều cao */
+    border-radius: 50%; 
+    width: 50px; 
+    height: 50px;  
     margin: 20px 5px;
     border: none;
+    /* background-color: transparent; */
+    cursor: pointer; 
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
 }
 
 .header-alert{
     display: flex;
 }
 
+/* body */
+.body-container{
+    background-color: #F6F5F2;
+}
 
+/* listMenu & shortcutMenu*/
+.body-menu{
+    display: flex;
+    flex: 4;
+    border-bottom: 2px solid lightslategray;
+}
+
+.body-menu ul li,.body-shortcut ul li{
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.body-menu ul li span,.body-shortcut ul li span{
+    color: #616161;
+    margin-left: 5px;
+}
+
+.body-shortcut{
+    flex: 4;
+}
+
+.body-shortcut div{
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: -5px;
+    
+}
 
 
