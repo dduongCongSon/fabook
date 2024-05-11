@@ -10,18 +10,8 @@ import ListSharpIcon from '@mui/icons-material/ListSharp';
 import ChatBubbleSharpIcon from '@mui/icons-material/ChatBubbleSharp';
 import AddAlertSharpIcon from '@mui/icons-material/AddAlertSharp';
 import AccountBoxSharpIcon from '@mui/icons-material/AccountBoxSharp';
-// menu
-import PeopleIcon from '@mui/icons-material/People';
-import BookmarkIcon from '@mui/icons-material/Bookmark';
-import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
-import HistoryIcon from '@mui/icons-material/History';
-import PendingIcon from '@mui/icons-material/Pending';
-// shortcut
-import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
-import PetsIcon from '@mui/icons-material/Pets';
-import CalculateIcon from '@mui/icons-material/Calculate';
-import HtmlIcon from '@mui/icons-material/Html';
-import SportsKabaddiIcon from '@mui/icons-material/SportsKabaddi';
+
+
 // import Image from '../../assets/1337222.jpeg'
 // import {Link} from "react-router-dom";
 import "./Header.css";
@@ -55,81 +45,10 @@ const Header = () => {
     },
   ]
 
-  const listMenu =[
-    {
-      id: 1,
-      item: PeopleIcon,
-      content: 'Friend',
-      class: "friendicon",
-    },
-    {
-      id: 2,
-      item: BookmarkIcon,
-      content: 'Saved',
-      class: "savedicon",
-    },
-    {
-      id: 3,
-      item: ChatBubbleIcon,
-      content: 'Messsage',
-      class: "messsageicon",
-    },
-    {
-      id: 4,
-      item: HistoryIcon,
-      content: 'Memory',
-      class: "memoryicon",
-    },
-    {
-      id: 5,
-      item: PendingIcon,
-      content: 'Show More',
-      class: "showmoreicon",
-    },
-  ]
-
-  const listShortcut =[
-    {
-      id: 1,
-      item: DirectionsCarIcon,
-      content: 'Troll Xe',
-      class: "trollxeicon",
-    },
-    {
-      id: 2,
-      item: PetsIcon,
-      content: 'Animal',
-      class: "animalicon",
-    },
-    {
-      id: 3,
-      item: CalculateIcon,
-      content: 'Love Math',
-      class: "lovemathicon",
-    },
-    {
-      id: 4,
-      item: HtmlIcon,
-      content: 'HTML Comunity',
-      class: "htmlcomunityicon",
-    },
-    {
-      id: 5,
-      item: SportsKabaddiIcon,
-      content: 'NBA Game',
-      class: "nbagameicon",
-    },
-    {
-      id: 6,
-      item: PendingIcon,
-      content: 'Show More',
-      class: "showmoreicon",
-    },
-  ]
   
   return (
     <>
-    <div className='header'>
+    <div className='header-container'>
       <div className="header-search" >
           <div id='icon-fabook'><FacebookIcon/></div>
           <div className='searchbox'>
@@ -160,29 +79,7 @@ const Header = () => {
           </button> */}
       </div>
     </div>
-    <div className='body-container'>
-      <div className='body-menu'>
-      <ul>
-        {listMenu.map((menuItem) => (
-          <li key={menuItem.id} className={`list ${menuItem.class}`}>
-            <menuItem.item /> 
-            <span>{menuItem.content}</span> 
-          </li>
-        ))}
-      </ul>
-      </div>
-      <div className='body-shortcut'>
-        <div>My shortcut </div>
-        <ul>
-          {listShortcut.map((shortcutItem) => (
-            <li key={shortcutItem.id} className={`list ${shortcutItem.class}`}>
-              <shortcutItem.item /> 
-              <span>{shortcutItem.content}</span> 
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
+
     </>
   )
 }

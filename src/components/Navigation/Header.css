@@ -1,5 +1,5 @@
 /* Header */
-.header{
+.header-container{
     display: flex;
     justify-content: space-between;
     background-color: #FFEFEF;
@@ -77,40 +77,6 @@
     display: flex;
 }
 
-/* body */
-.body-container{
-    background-color: #F6F5F2;
-}
 
-/* listMenu & shortcutMenu*/
-.body-menu{
-    display: flex;
-    flex: 4;
-    border-bottom: 2px solid lightslategray;
-}
-
-.body-menu ul li,.body-shortcut ul li{
-    padding: 15px 10px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-
-}
-
-.body-menu ul li span,.body-shortcut ul li span{
-    color: #616161;
-    margin-left: 5px;
-}
-
-.body-shortcut{
-    flex: 4;
-}
-
-.body-shortcut div{
-    margin-left: 15px;
-    margin-top: 10px;
-    margin-bottom: -5px;
-    
-}
 
 

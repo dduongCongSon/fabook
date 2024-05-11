@@ -1,0 +1,80 @@
+.body-container{
+    display: flex;
+    width: 100%;
+    background-color: #F6F5F2;
+    justify-content: space-between;
+
+}
+/* body */
+
+/* 
+.leftHome-container{
+    flex: 3;
+} */
+
+/* listMenu & shortcutMenu*/
+.topLeft{
+
+    /* display: flex; */
+    /* flex: 4; */
+    border-bottom: 2px solid lightslategray;
+}
+
+.topLeft ul li{
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.topLeft ul li span{
+    color: #616161;
+    margin-left: 5px;
+    font-weight: 700;
+    font-size: var(--size-l);
+}
+
+ /* .botLeft{
+    flex: 4;
+} */
+
+.botLeft div{
+    margin-left: 15px;
+    margin-top: 10px;   
+} 
+
+.botLeft .btn-seeMore, .topLeft .btn-seeMore {
+    width: 80%;
+    border: none; 
+    background-color: lightgray;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+/* Bottom left */ 
+.botLeft .List-page .image{
+width: 50px;
+height: 50px;
+object-fit: cover;
+border-radius: 8px;
+}
+
+.botLeft .List-page li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.botLeft .List-page span{
+    color: #616161;
+    margin-left: 5px;
+    font-weight: 700;
+    font-size: var(--size-l);
+}
