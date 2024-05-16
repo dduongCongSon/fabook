@@ -68,7 +68,7 @@ const Left = ({ listShortcut }) => {
   React.useEffect(() => {
     setDataList(listMenu.slice(0, numberList));
     setDataPage(listShortcut.slice(0, numberPage));
-    }, [numberList]);
+    }, [numberList,numberPage]);
 
   // const menuVisibleItems = showAll ? listMenu : listMenu.slice(0, initNumberList); setNumberPages (likePAge.length);
   // const shortcutVisibleItems = showAll ? listShortcut : listShortcut.slice(0, initNumberList);
@@ -110,10 +110,13 @@ const Left = ({ listShortcut }) => {
           </ul>
         </div>
         <button className='btn-seeMore' onClick={()=>{
-          if (numberPage === initNumberList) {
-            setNumberPage(listShortcut.length);
-          } else {
-            setNumberPage(initNumberList);
+          {
+            numberPage === initNumberList &&
+              setNumberPage(listShortcut.length);
+          }
+          {
+            numberPage === listShortcut.length &&
+              setNumberPage(initNumberList);
           }
         }}>
           <span >{numberPage === initNumberList ? "See more" : "Hide"}</span>

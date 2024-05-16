@@ -1,0 +1,153 @@
+.newfeed-container{
+    width: 40%;
+}
+
+.stories-container{
+    position: relative;
+    display: flex;
+    overflow-x: hidden;
+}
+
+.stories{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.stories div:nth-of-type(even) {
+    margin: 0 20px;
+}
+
+.story-box ::before {
+    content: "";
+    background-color:black;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+}
+
+.scroll-btn{
+    position: absolute;
+    top :50%;
+    color: rgb(177, 177, 177);
+    padding: 0px 10px 0 20px;
+    cursor: pointer;
+    z-index: 50;
+}
+
+.left{
+    left: 0;
+}
+
+.right{
+    right: 0;
+}
+
+/* postStatus */
+.postStatus-container{
+    margin-top: 25px;
+    background-color: rgb(190, 190, 190);
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.postInput{
+    display: flex;
+}
+
+.input{
+    margin-left: 15px;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid lightgrey;
+    padding: 8px;
+    font-size: 15px;
+}
+
+.postExtension{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+}
+
+.icon span{
+    font-weight: bold;
+}
+
+/* newfeed */
+.newfeed-card{
+    background-color: rgb(190, 190, 190);
+    border-radius: 7px;
+    margin: 15px 0px;
+
+}
+
+
+.info-user{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px 10px 5px 10px;
+}
+
+.info-user .left{
+    display: flex;
+    cursor: pointer;
+}
+
+.info-user .right{
+    cursor: pointer;
+    
+}
+
+.info-box{
+    margin-left: 5px;
+    justify-content: center;
+}
+
+.name-user {
+    font-weight: 700;
+}
+
+.name-user .description {
+    font-weight: normal;
+    cursor: default;
+}
+
+.newfeed-image{
+    display: block; 
+    width: 100%; 
+    height: auto; 
+}
+
+.picture{
+    max-width: 100%;  
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.news-reac {
+    border-top: 1px solid rgb(54, 54, 54);
+    display: flex;
+    justify-content: space-around;
+    color: #000;
+}
+
+.reac-information div {
+    margin: 2.5px 0px 0px 5px;
+  }
+  
+.reac-information{
+    display: flex;
+    margin: 10px;
+  
+}
+
+.news-content{
+    margin-left: 10px;
+}
