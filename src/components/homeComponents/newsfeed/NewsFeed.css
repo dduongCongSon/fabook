@@ -136,6 +136,13 @@
     display: flex;
     justify-content: space-around;
     color: #000;
+    cursor: pointer;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+
 }
 
 .reac-information div {
@@ -144,10 +151,79 @@
   
 .reac-information{
     display: flex;
-    margin: 10px;
+    align-items: center;
   
 }
 
 .news-content{
+    margin-left: 10px;
+}
+
+.view-more:hover {
+    text-decoration: underline;
+  }
+  
+.view-more{
+    cursor: pointer;
+}
+
+.news-box_list-comment{
+    margin: 15px 0;
+}
+.news-box_list-comment .view-more{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.news-box_list-comment  .user-comment{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.news-box_list-comment  .user-comment .comment{
+    background-color: rgb(85, 85, 85);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.news-box_list-comment  .user-comment .comment p:nth-of-type(1) {
+    font-weight: bold;
+}
+
+.news-box_list-comment .input-comment{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.news-box_list-comment .input-comment .user-input{
+    position: relative;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.news-box_list-comment .input-comment .user-input .input{
+    width: 93%;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid lightgray;
+    outline: none;
+    margin-bottom: 5px;
+} 
+
+.news-box_list-comment .input-comment .user-input .icon{
+    position: absolute;
+    top: 8px;
+    right: 5%;
+    cursor: pointer;
+}
+
+.avt-cmt{
     margin-left: 10px;
 }
